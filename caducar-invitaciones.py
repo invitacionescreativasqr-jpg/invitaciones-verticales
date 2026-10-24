@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta, date
 import re
 import shutil
 
-PATTERN = re.compile(r'vertical-(?:mickey|plimplim)-[a-z0-9][a-z0-9-]{0,46}\.html')
+PATTERN = re.compile(r'vertical-(?:mickey|plimplim|babygoku)-[a-z0-9][a-z0-9-]{0,46}\.html')
 MARKER = re.compile(r'<meta name="invitation-event-date" content="(\d{4}-\d{2}-\d{2})">')
 
 def read_expiry(event_date, header=''):
